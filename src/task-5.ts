@@ -1,4 +1,4 @@
-function logStatus(status) {
+function logStatus(status: "loading" | "success" | "error"): void {
     if (status === "loading") {
       console.log("Loading...");
     } else if (status === "success") {
@@ -8,5 +8,7 @@ function logStatus(status) {
     }
   }
   
-  logStatus("loading");
+logStatus("loading");
+logStatus("success");
+logStatus("error");
   
